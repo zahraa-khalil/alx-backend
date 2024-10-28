@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """find the correct indexes to paginate the dataset"""
+
 import csv
 import math
 from typing import List
@@ -17,7 +18,7 @@ class Server:
     """
     DATA_FILE = "Popular_Baby_Names.csv"
 
-    def _init_(self):
+    def __init__(self):
         self.__dataset = None
 
     def dataset(self) -> List[List]:
@@ -30,6 +31,9 @@ class Server:
             self.__dataset = dataset[1:]
 
         return self.__dataset
+
+    def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
+        pass
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """Get a page of data from the dataset."""

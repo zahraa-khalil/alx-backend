@@ -47,11 +47,12 @@ class Server:
 
         indexed_dataset = self.indexed_dataset()
 
-        assert 0 <= index < len(indexed_dataset), "AssertionError raised when out of range"
-        
+        assert 0 <= index < len(
+            indexed_dataset), "AssertionError raised when out of range"
+
         dataset = self.dataset()
-        next_index =  index + page_size
-          
+        next_index = index + page_size
+
         return {
             "index": index,
             "next_index": next_index,

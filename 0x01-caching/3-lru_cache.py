@@ -22,7 +22,7 @@ class LRUCache(BaseCaching):
                 # oldest_key = next(iter(self.cache_data))
                 oldest_key, _ = self.cache_data.popitem(last=False)
                 print(f"DISCARD: {oldest_key}")
-                # del self.cache_data[oldest_key]
+                del self.cache_data[oldest_key]
 
     def get(self, key):
         """Get a key/value pair"""

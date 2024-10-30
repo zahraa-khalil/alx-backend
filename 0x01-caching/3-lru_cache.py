@@ -16,13 +16,15 @@ class LRUCache(BaseCaching):
     def put(self, key, item):
         """Put a key/value pair"""
         if key and item:
+            if key in self.cache_data:
+                self.cache_data.pop(key)
+
             self.cache_data[key] = item
 
             if len(self.cache_data) > BaseCaching.MAX_ITEMS:
                 # oldest_key = next(iter(self.cache_data))
                 oldest_key, _ = self.cache_data.popitem(last=False)
                 print(f"DISCARD: {oldest_key}")
-                # del self.cache_data[oldest_key]
 
     def get(self, key):
         """Get a key/value pair"""

@@ -2,13 +2,10 @@
 # Copyright (C) 2024 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
 
-msgid "home_title"
-msgstr "Bienvenue chez Holberton"
-
-
-msgid "home_header"
-msgstr "Bonjour monde!"
 
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
@@ -22,3 +19,11 @@ msgstr "Bonjour monde!"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.16.0\n"
+
+
+msgid "home_title"
+msgstr "Bienvenue chez Holberton"
+
+
+msgid "home_header"
+msgstr "Bonjour monde!"

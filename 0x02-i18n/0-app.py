@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """i18n Module"""
+
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -7,6 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    """home page"""
     return render_template('0-index.html')
 
 
